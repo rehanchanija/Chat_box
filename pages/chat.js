@@ -6,7 +6,7 @@ import socket from "../utils/socket";
   const [text, setText] = useState("");
 
   useEffect(() => {
-    socket.on("receiveMessage", (message) => {
+    socket.on("receiveMessage", (message) => { 
         console.log("New message:", message);
         setMessages((prev) => [...prev, message]); // Update state
     });
